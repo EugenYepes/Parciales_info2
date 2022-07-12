@@ -1,0 +1,30 @@
+Algoritmo:
+
+Cliente
+    datos del cliente y direccion de envio
+        desarrollar los constructores
+Costo
+    precios de los productos, los precios pueden ser actualizados
+        desarrollar constructor parametrizado
+        generar sobrecarga del operador << que permita en cualquier momento imprimir el costo unitario
+            cout << c;//imprime el costo de todos los atributos de la clase
+Envio
+    hereda de Costo para elaborar los pedidos 
+    debe tener ademas variable de la cantidad de envios realizados
+    debe tener ademas variable de cantidad de envios activos/pendientes
+    debe tener ademas variable del total recaudado
+    mostrar estas variables por el main
+    desarrollar metodos para que se pueda ejecutar el siguente codigo desde el Main
+        Cliente A("Pepe", "J.B Justo 3213");
+        Cliente A("Cacho", "Yapeyu 197");
+        Cliente A("Jose", "Medrano 75");
+        Envio E(A,2,1,1);
+        cout<<E;
+        E.setCosto(200,200,200);
+        Envio E1(B,2,1,1)
+        cout<<E1;
+        E1.entregado();
+        cout<<E1;
+Main
+    instanciar un objeto Cliente, con el constructor parametrizado y un objeto de la clase costo
+        con el constructor por defecto, imprimir por pantalla el objeto costo con la sobrecarga de <<|
